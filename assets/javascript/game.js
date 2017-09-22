@@ -66,8 +66,8 @@ var gems = {
 
     reset: function() {
       gameOver = false;
+      boo = 0;
       $("#total-score").empty();
-      gems.render();
     },
 
     //generates random number AND assigns random value to all gems
@@ -101,6 +101,7 @@ var gems = {
         console.log("winner");
         $("#status").text("WINNER!");
         gems.reset();
+        gems.render();
       }
       if (boo > randomNumber) {
         gameOver = true;
@@ -109,6 +110,7 @@ var gems = {
         console.log("loser");
         $("#status").text("LOSER!");
         gems.reset();
+        gems.render();
       }
     },
 
@@ -118,6 +120,7 @@ var gems = {
 
 } //end gems object
 
+  gems.render();
   gems.reset();
   // gems.add();
   clicko();
