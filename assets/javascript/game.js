@@ -122,7 +122,6 @@ var gems = {
 
   gems.render();
   gems.reset();
-  // gems.add();
   clicko();
   gems.winLoss();
 
