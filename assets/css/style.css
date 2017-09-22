@@ -63,20 +63,8 @@ p {
 .total-number {
 	font-size: 24px;
 	font-weight: 600;
-	padding-top: 0px;
+	padding-top: 12px;
 }
-
-/*#random-number {
-	font-size: 24px;
-	font-weight: 600;
-	padding-top: 0px;
-}
-
-#total-number {
-	font-size: 24px;
-	font-weight: 600;
-	padding-top: 0px;
-}*/
 
 .div-right {
 	width: 320px;

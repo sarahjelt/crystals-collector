@@ -1,19 +1,11 @@
 //crystals collector game
 
-//on clicking any of the 4 gems, that gem's assigned value will be pushed
-//to totalScore, click again and that value is added to whatever current 
-//totalScore is (+=)
-
-//if totalScore > randomNumber, loss++ and generate new randomNumber and new gem values
-//if totalScore = randomNumber, win++ and generate new randomNumber and new gem values
-
 $(document).ready(function(){
 
   var gemone;
   var gemtwo;
   var gemthree;
   var gemfour;
-
   var boo;
 
 //click events -- puts total in id total-score
