@@ -8,7 +8,7 @@ $(document).ready(function(){
   var gemfour;
   var boo;
 
-//click events -- puts total in id total-score
+//click events -- puts total in id total-score and checks for win or loss
 var clicko = function() {
   boo = 0;
       $("#gem1").on("click", function() {
@@ -62,7 +62,7 @@ var gems = {
       $("#total-score").empty();
     },
 
-    //generates random number AND assigns random value to all gems
+    //generates random number and assigns random value to all gems
     render: function() {
     //range from 19-120
       randomNumber = Math.floor(Math.random() * 102) + 19;
@@ -81,8 +81,6 @@ var gems = {
       console.log(gemRandom3);
       console.log(gemRandom4);
     },
-
-//function where total score has gemRandom added to it needs to be somewhere
 
 //runs when you win or lose
     winLoss: function() {
@@ -104,10 +102,6 @@ var gems = {
         gems.reset();
         gems.render();
       }
-    },
-
-    add: function() {
-      totalScore = parseInt($("#total-score"));
     }
 
 } //end gems object
